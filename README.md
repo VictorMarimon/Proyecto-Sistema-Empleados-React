@@ -1,70 +1,120 @@
-# Getting Started with Create React App
+# Sistema de Gestión de Empleados
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![Licencia](https://img.shields.io/badge/Licencia-MIT-blue.svg)
+![React](https://img.shields.io/badge/React-18.0.0-blue)
+![Bootstrap](https://img.shields.io/badge/Bootstrap-5.1.3-purple)
 
-## Available Scripts
+## Descripción
 
-In the project directory, you can run:
+El **Sistema de Gestión de Empleados** es una aplicación web desarrollada en React que permite a las organizaciones gestionar eficientemente la información de sus empleados. Ofrece funcionalidades como:
 
-### `npm start`
+- Listado de empleados
+- Agregar nuevos empleados
+- Editar información de empleados existentes
+- Eliminar empleados
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Características
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Interfaz Intuitiva**: Diseño limpio y fácil de usar.
+- **Gestión Completa**: Permite crear, leer, actualizar y eliminar registros de empleados.
+- **Componentes Reutilizables**: Uso de componentes de React para una mejor mantenibilidad.
+- **Estilizado con Bootstrap**: Diseño responsivo y moderno utilizando Bootstrap.
 
-### `npm test`
+## Tecnologías Utilizadas
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- [React](https://es.reactjs.org/) - Biblioteca principal para la construcción de la interfaz de usuario.
+- [Bootstrap](https://getbootstrap.com/) - Framework CSS para el diseño responsivo y estilizado.
+- [Axios](https://axios-http.com/) - Cliente HTTP para realizar solicitudes a la API backend.
+- [React Router DOM](https://reactrouter.com/web/guides/quick-start) - Para la navegación entre componentes.
 
-### `npm run build`
+## Requisitos Previos
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Antes de comenzar, asegúrate de tener instalado lo siguiente:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- [Node.js](https://nodejs.org/) (versión 14 o superior)
+- [npm](https://www.npmjs.com/) o [yarn](https://yarnpkg.com/)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Instalación
 
-### `npm run eject`
+1. **Clonar el repositorio**:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+   ```bash
+   git clone https://github.com/VictorMarimon/Proyecto-Sistema-Empleados-React.git
+   cd Proyecto-Sistema-Empleados-React
+   ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+2. **Instalar dependencias**:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+   ```bash
+   npm install
+   ```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+   o si usas yarn:
 
-## Learn More
+   ```bash
+   yarn install
+   ```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Uso
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+1. **Iniciar la aplicación**:
 
-### Code Splitting
+   ```bash
+   npm start
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+   o con yarn:
 
-### Analyzing the Bundle Size
+   ```bash
+   yarn start
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+2. **Acceder a la aplicación**:
 
-### Making a Progressive Web App
+   Abre tu navegador y navega a `http://localhost:3000` para interactuar con la aplicación.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Estructura del Proyecto
 
-### Advanced Configuration
+```
+Proyecto-Sistema-Empleados-React/
+├── public/
+│   ├── index.html
+│   └── ...
+├── src/
+│   ├── empleados/
+│   │   ├── AgregarEmpleados.js
+│   │   ├── EditarEmpleados.js
+│   │   └── ListadoEmpleados.js
+│   ├── plantilla/
+│   │   └── Navegacion.js
+│   ├── App.js
+│   └── index.js
+├── package.json
+└── README.md
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+- **`public/`**: Contiene el archivo HTML principal y otros activos públicos.
+- **`src/`**: Contiene el código fuente de la aplicación.
+  - **`components/`**: Incluye los componentes de React utilizados en la aplicación.
+  - **`App.js`**: Componente principal de la aplicación.
+  - **`index.js`**: Punto de entrada de la aplicación.
 
-### Deployment
+## Contribución
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Si deseas contribuir al proyecto:
 
-### `npm run build` fails to minify
+1. Realiza un fork del repositorio.
+2. Crea una nueva rama (`git checkout -b feature/nueva-funcionalidad`).
+3. Realiza tus cambios y haz commit (`git commit -m 'Agregar nueva funcionalidad'`).
+4. Sube tus cambios (`git push origin feature/nueva-funcionalidad`).
+5. Abre una Pull Request.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Licencia
+
+Este proyecto está bajo la Licencia MIT. Consulta el archivo [LICENSE](LICENSE) para más detalles.
+
+## Contacto
+
+Para preguntas o soporte, puedes contactarme a través de [3reehuy@gmail.com](3reehuy@gmail.com).
+
+---
